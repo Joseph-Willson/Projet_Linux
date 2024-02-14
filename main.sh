@@ -8,6 +8,6 @@ echo "******************* Données collectées *******************"
 
 
 echo "******************* affichage des données *******************"
-bash ./data_processor/data_processor.sh
+bash ./data_processor/data_integrator.sh
 
 
