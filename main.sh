@@ -7,7 +7,7 @@ bash ./data_collector/collect_data.sh
 echo "******************* Données collectées *******************"
 
 
-echo "******************* affichage des données *******************"
-bash ./data_processor/data_integrator.sh
+# echo "******************* affichage des données *******************"
+# bash ./data_processor/data_integrator.sh
 
 
