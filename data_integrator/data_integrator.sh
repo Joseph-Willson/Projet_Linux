@@ -1,4 +1,4 @@
-source ./venv/Scripts/activate
+source ./venv/bin/activate
 
 python3 ./data_integrator/data_intgrator.py
 

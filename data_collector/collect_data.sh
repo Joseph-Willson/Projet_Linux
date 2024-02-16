@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activer l'environnement virtuel
-source ./venv/Scripts/activate
+source ./venv/bin/activate
 
 # Récupérer le fichier JSON avec curl et le placer dans un dossier source
 curl -o intents.json "https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/chatbot_codes/intents.json"

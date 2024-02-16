@@ -10,12 +10,12 @@ import streamlit as st
 
 # Chargement des données
 lemmatizer = WordNetLemmatizer()
-with open('../source/intents.json', 'r') as file:
+with open('../Projet_Linux/source/intents.json', 'r') as file:
     intents = json.load(file)
 
-words = pickle.load(open('../Linux/data_processor/words.pkl', 'rb'))
-classes = pickle.load(open('../Linux/data_processor/classes.pkl', 'rb'))
-model = load_model('../Linux/data_processor/chatbot_model.h5')
+words = pickle.load(open('../Projet_Linux/words.pkl', 'rb'))
+classes = pickle.load(open('../Projet_Linux/classes.pkl', 'rb'))
+model = load_model('../Projet_Linux/chatbot_model.h5')
 
 
 def clean_up_sentence(sentence):
@@ -82,11 +82,11 @@ def main():
             message_history.append(("Chatbot", res))
 
     # Display messages
-    for sender, message in message_history:
+    for index, (sender, message) in enumerate(message_history):
         if sender == "You":
-            st.text_input("You:", message, key=message)
+            st.text_input("You:", message, key=f"You_{index}")
         else:
-            st.text_input("Chatbot:", message, key=message)
+            st.text_input("Chatbot:", message, key=f"Chatbot_{index}")
 
 
 if __name__ == '__main__':
