@@ -1,5 +1,5 @@
 echo "******************* Initialisation de l'application *******************"
-source ./venv/bin/activate
+#source ./venv/bin/activate
 
 
 echo "******************* Collecte des données *******************"

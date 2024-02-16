@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activer l'environnement virtuel
-source ./venv/bin/activate
+#source ./venv/bin/activate
 
 # Récupérer le fichier JSON avec curl et le placer dans un dossier source
 curl -o intents.json "https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/chatbot_codes/intents.json"
@@ -13,7 +13,7 @@ mkdir -p source
 mv intents.json source/
 
 # Donner des permissions au dossier source
-chmod 777 source
+chmod 777 ./Projet_Linux/source
 
 """
 #!/bin/bash
