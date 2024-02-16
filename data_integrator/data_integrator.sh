@@ -1,5 +1,5 @@
-source ./venv/bin/activate
+source ./venv/Scripts/activate
 
-python3 ./data_processor/data_intgrator.py
+python3 ./data_integrator/data_intgrator.py
 
-chmod +x data_integrator.sh
+chmod +x ./data_integrator/data_integrator.sh
